@@ -1,5 +1,6 @@
 # AI-Based-Predictive-Maintenance-Helical-Gearbox
 Machine Learning based predictive maintenance prototype for an industrial helical gearbox using vibration condition-monitoring data.
+
 # Dataset
 
 ## PHM Society 2009 Gearbox Dataset
@@ -44,13 +45,13 @@ The models used in this project are:
 
 ### Dataset Source
 
-PHM Society 2009 Data Challenge – Gearbox Dataset
+**PHM Society 2009 Data Challenge – Gearbox Dataset**
 
 Official source:
 https://phmsociety.org/public-data-sets/
 
 The original dataset files are not included in this repository because of their size.
 
-### Note
+---
 
-The dataset is publicly available experimental data. The project uses the dataset for machine-learning-based gearbox condition monitoring and predictive-maintenance research.
+**Done by Suhas M**
