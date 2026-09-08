@@ -16,17 +16,15 @@ csv_files = glob.glob(os.path.join(DATASET_PATH, "*.csv"))
 print("CSV files found:", len(csv_files))
 
 if not csv_files:
-    raise FileNotFoundError(
-        "PHM 2009 Gearbox Dataset not found in the data folder."
-    )
+    print("PHM 2009 Gearbox Dataset not found.")
+else:
+    data = []
 
-data = []
+    for file in csv_files:
+        df = pd.read_csv(file)
+        data.append(df)
 
-for file in csv_files:
-    df = pd.read_csv(file)
-    data.append(df)
+    dataset = pd.concat(data, ignore_index=True)
 
-dataset = pd.concat(data, ignore_index=True)
-
-print("Dataset shape:", dataset.shape)
-print(dataset.head())
+    print("Dataset shape:", dataset.shape)
+    print(dataset.head())
