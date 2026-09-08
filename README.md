@@ -143,6 +143,21 @@ The developed prototype demonstrates the potential use of machine learning for:
 * Maintenance decision support
 * Predictive maintenance systems
 
+## Results
+
+The developed machine-learning pipeline processes gearbox vibration signals, extracts statistical condition-monitoring features, and uses these features for gearbox condition classification.
+
+The performance of the Decision Tree and Random Forest models will be evaluated using:
+
+* Accuracy
+* Confusion Matrix
+* Precision
+* Recall
+* F1-Score
+
+The final model performance will be reported after evaluation on the verified labeled PHM Society 2009 Gearbox Dataset.
+
+
 ## Limitations
 
 * The project is based on publicly available experimental data.
