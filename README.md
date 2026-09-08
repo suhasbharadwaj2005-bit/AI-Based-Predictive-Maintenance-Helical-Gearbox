@@ -1,27 +1,37 @@
-# AI-Based-Predictive-Maintenance-Helical-Gearbox
-Machine Learning based predictive maintenance prototype for an industrial helical gearbox using vibration condition-monitoring data.
+# AI-Based Predictive Maintenance of an Industrial Helical Gearbox Using Machine Learning
 
-# Dataset
+## Mechanical Concepts Used
 
-## PHM Society 2009 Gearbox Dataset
+This project combines mechanical engineering principles with machine learning for gearbox condition monitoring.
 
-This project uses the **PHM Society 2009 Gearbox Dataset**, a publicly available experimental dataset for gearbox fault detection and condition monitoring.
+Key mechanical concepts include:
 
-The dataset contains vibration and tachometer measurements collected from an experimental gearbox setup.
+* Helical gears and gear meshing
+* Gearbox components and operation
+* Gearbox vibration and condition monitoring
+* Gearbox fault and failure mechanisms
+* Preventive and predictive maintenance
+* Vibration-based fault diagnosis
 
-### Data Used
+## Dataset
 
-The dataset includes:
+The project uses the **PHM Society 2009 Gearbox Dataset**, a publicly available experimental dataset developed for gearbox fault detection and condition monitoring.
+
+The dataset contains synchronous measurements collected from an experimental gearbox test setup.
+
+## Data Used
+
+The PHM 2009 dataset includes:
 
 * Input-side accelerometer signal
 * Output-side accelerometer signal
 * Tachometer signal
 
-The experiments were performed under different gearbox operating conditions and gear configurations, including **spiral-cut (helical) gears**.
+The experimental setup includes different operating conditions and gear configurations, including **spiral-cut (helical) gears**.
 
-### Feature Extraction
+## Feature Extraction
 
-The raw vibration signals are processed to extract condition-monitoring features such as:
+Vibration signals are processed to extract statistical condition-monitoring features:
 
 * RMS
 * Peak
@@ -32,18 +42,24 @@ The raw vibration signals are processed to extract condition-monitoring features
 * Skewness
 * Crest Factor
 
-These features are used as inputs to the machine-learning models.
+These features represent different characteristics of the gearbox vibration signal and are used as inputs for machine-learning models.
 
-### Machine Learning
+## Machine Learning
 
-The extracted features are used to train classification models for identifying the available gearbox conditions.
+The extracted vibration features are used to develop a classification-based predictive-maintenance model.
 
-The models used in this project are:
+Models used:
 
-* Decision Tree
-* Random Forest
+* Decision Tree Classifier
+* Random Forest Classifier
 
-### Dataset Source
+The models are trained and evaluated to classify the available gearbox operating or fault conditions.
+
+## Project Objective
+
+The objective is to demonstrate how vibration-based condition-monitoring data can be combined with machine learning to support **early gearbox fault detection and predictive maintenance**.
+
+## Dataset Source
 
 **PHM Society 2009 Data Challenge – Gearbox Dataset**
 
@@ -51,7 +67,3 @@ Official source:
 https://phmsociety.org/public-data-sets/
 
 The original dataset files are not included in this repository because of their size.
-
----
-
-**Done by Suhas M**
